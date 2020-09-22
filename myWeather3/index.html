@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New Weather Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wholePage">
+      <div class="nav-holder">
+        <a id="today" href="#">Today</a>
+        <a id="forecast" href="#">Forecast</a>
+        <a id="contact" href="#">Contact</a>
+        <a id="login" href="#">Login</a>
+        <a id="register" href="#">Register</a>
+      </div>
+      <div id="heroInfoContainer">
+        <div id="heroInfo">
+          <h1>Welcome</h1>
+          <p>Put your zipcode to get the most accurate weather of all time.</p>
+
+          <div class="inputBox">
+            <input id="zipCode" type="text" />
+            <button id="getWeather">Get Weather</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="contentContainer">
+        <div class="forecast"></div>
+        <div class="content"></div>
+        <div class="forecast2"></div>
+      </div>
+    </div>
+    <!--     <script src="lib/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
