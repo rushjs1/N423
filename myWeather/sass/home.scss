@@ -1,0 +1,106 @@
+.wholePage {
+  /*   display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+  height: 120%;
+  width: 100%;
+
+  /* background-image: linear-gradient(
+      rgba(242, 92, 84, 0.2),
+      rgba(242, 92, 84, 0.2)
+    ),
+    url("../images/hero.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("../images/hero.jpg");
+  // background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.heroInfoContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-holder {
+  /*  background-color: cadetblue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-image: linear-gradient(
+    rgba(135, 181, 235, 0.9),
+    rgba(0, 0, 84, 0)
+  );
+  height: 10%;
+  width: 100%;
+}
+.nav-holder a {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: beige;
+}
+.nav-holder a:hover {
+  background-image: linear-gradient(rgba(135, 181, 235, 1), rgba(0, 0, 84, 0));
+}
+#today {
+}
+
+#heroInfo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.forecast {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.forecast2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 11%;
+}
+
+#zipCode {
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-color: rgb(135, 181, 235);
+  color: beige;
+}
+#getWeather {
+  border-radius: 30%;
+  font-size: 16px;
+  padding: 10px;
+}
