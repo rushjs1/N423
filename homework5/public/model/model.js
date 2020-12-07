@@ -19,6 +19,16 @@ export function signIn(callback) {
     .then(function(result) {
       _db = firebase.firestore();
       callback();
+      _db
+        .collection("Albums")
+        .where()
+        .get()
+        .then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+            let all = doc.data();
+            $(".content").append(`<p>Album: ${all.albumName}</p>`);
+          });
+        });
     });
 }
 
